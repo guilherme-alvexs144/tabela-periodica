@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        table{
+            width: 70%;
+            margin: 50px auto;
+            border-spacing: 6px;
+        }
+        td{
+            background-color: rgb(206, 104, 121);
+            font-family: Gill Sans, sans-serif;
+            width: 50px;
+            height: 60px;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            font-weight:bolder;
+            z-index: 1;
+            position: relative;
+            box-shadow: 2px 1px 7px rgb(109, 106, 106);
+            transition: width 1s, height 1s, border 1s;
+            
+        }
+        
+        td:hover{
+            width:80px;
+            height: 90px;
+            z-index: 3;
+            position: relative;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        div{
+            display: flex;
+             flex-direction: column;
+        }
+        #numeroatomico{
+            font-size: 9px;
+            text-align: left;
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+        #icone{
+            text-align: center;
+            font-size: 13px;
+        }
+        #massaatomica{
+            font-size: 9px;
+            text-align: right;
+            margin-right: 5px;
+            margin-bottom: 2px;
+            
+        }
+        #nome{
+            font-size: 0.58vw;
+            text-align: center;
+        }
+        #colspanado{
+            background-color: white;
+            color: white;
+            box-shadow: 0px 0px 0px white;
+            position: relative;
+            z-index: 0;
+        }
+        #colspanado:hover{
+            width:50px;
+            height: 60px;
+        }
+        #metais-alcalinos{
+            background-color: rgb(168, 83, 189);
+            color: #61215c;
+            box-shadow: 3px 2px 6px rgb(124, 18, 124);
+        }
+        #alcalinoterrosos{
+            background-color: #664ac9;
+            color: #241b42;
+            box-shadow: 3px 2px 6px #2b04a1;
+        }
+        #semimetais{
+            background-color: rgb(56, 160, 52);
+            color: rgb(25, 73, 23);
+            box-shadow: 3px 2px 6px rgb(24, 121, 20);
+        }
+        #nobre{
+            background-color: rgb(252, 56, 56);
+            color: #6e2323;
+            box-shadow:3px 2px 6px#9b2424 ;
+        }
+        #ametais-reativos{
+            background-color: #e9eb5a;
+            color: rgb(119, 124, 42);
+            box-shadow:3px 2px 6px #bec02d ;
+        }
+        #pós-transição{
+            background-color: rgb(47, 192, 192);
+            color: rgb(31, 112, 112);
+            box-shadow:3px 2px 6px rgb(20, 128, 128) ;
+        }
+        #metais{
+            background-color: #376fb8;
+            color: #183872;
+            box-shadow: 3px 2px 6px #3879db;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+             <td id="ametais-reativos">
+                <div>
+                    <span id="numeroatomico">1</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">1</span>
+                    
+                </div></td>
+             <td colspan="16" id="colspanado"></td>
+             <td id="nobre">
+                <div>
+                    <span id="numeroatomico">2</span>
+                    <span id="icone">He</span>
+                    <span id="nome">hélio</span>
+                    <span id="massaatomica">4</span>
+                    
+                </div></td> 
+            </tr>
+
+  <!-- começa de outra coluna-->
+
+            <tr>
+              <td id="metais-alcalinos">
+                <div>
+                    <span id="numeroatomico">3</span>
+                    <span id="icone">Li</span>
+                    <span id="nome" >lítio</span>
+                    <span id="massaatomica">6.94</span>
+                    
+                </div></td>
+                <td id="alcalinoterrosos">
+                <div>
+                    <span id="numeroatomico">4</span>
+                    <span id="icone">Be</span>
+                    <span id="nome">berílio</span>
+                    <span id="massaatomica">9.01</span>
+                    
+                </div></td> 
+             <td colspan="10" id="colspanado"></td>
+             <td id="semimetais">
+                <div>
+                    <span id="numeroatomico">5</span>
+                    <span id="icone">B</span>
+                    <span id="nome">boro</span>
+                    <span id="massaatomica">10.81</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                <div>
+                    <span id="numeroatomico">6</span>
+                    <span id="icone">C</span>
+                    <span id="nome">carbono</span>
+                    <span id="massaatomica">12</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                <div>
+                    <span id="numeroatomico">7</span>
+                    <span id="icone">N</span>
+                    <span id="nome">nitrogênio</span>
+                    <span id="massaatomica">14</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                    
+                <div>
+                    <span id="numeroatomico">8</span>
+                    <span id="icone">O</span>
+                    <span id="nome">oxigênio</span>
+                    <span id="massaatomica">15</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                    
+                <div>
+                    <span id="numeroatomico">9</span>
+                    <span id="icone">F</span>
+                    <span id="nome">flúor</span>
+                    <span id="massaatomica">18.99</span>
+                    
+                </div></td>
+             <td id="nobre">
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">Ne</span>
+                    <span id="nome">neônio</span>
+                    <span id="massaatomica">20.18</span>
+                    
+                </div></td> 
+            </tr>
+
+            <!--começo de outra coluna-->
+
+            <tr>
+              <td id="metais-alcalinos">
+                <div>
+                    <span id="numeroatomico">11</span>
+                    <span id="icone">Na</span>
+                    <span id="nome">sódio</span>
+                    <span id="massaatomica">22.99</span>
+                    
+                </div></td>
+                <td id="alcalinoterrosos">
+                <div>
+                    <span id="numeroatomico">12</span>
+                    <span id="icone">Mg</span>
+                    <span id="nome">magnésio</span>
+                    <span id="massaatomica">24.3</span>
+                    
+                </div></td> 
+             <td colspan="10" id="colspanado"></td>
+             <td id="pós-transição">
+                    
+                <div>
+                    <span id="numeroatomico">13</span>
+                    <span id="icone">Al</span>
+                    <span id="nome">alumínio</span>
+                    <span id="massaatomica">26.98</span>
+                    
+                </div></td>
+             <td id="semimetais">
+                <div>
+                    <span id="numeroatomico">14</span>
+                    <span id="icone">Si</span>
+                    <span id="nome">silício</span>
+                    <span id="massaatomica">28.08</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                <div>
+                    <span id="numeroatomico">15</span>
+                    <span id="icone">P</span>
+                    <span id="nome">fósforo</span>
+                    <span id="massaatomica">30.97</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                <div>
+                    <span id="numeroatomico">16</span>
+                    <span id="icone">S</span>
+                    <span id="nome">enxofre</span>
+                    <span id="massaatomica">32.06</span>
+                    
+                </div></td>
+                <td id="ametais-reativos">
+                <div>
+                    <span id="numeroatomico">17</span>
+                    <span id="icone">Cl</span>
+                    <span id="nome">cloro</span>
+                    <span id="massaatomica">35.45</span>
+                    
+                </div></td>
+             <td id="nobre">
+                <div>
+                    <span id="numeroatomico">18</span>
+                    <span id="icone">Ar</span>
+                    <span id="nome">argônio</span>
+                    <span id="massaatomica">39.94</span>
+                    
+                </div></td> 
+            </tr>
+
+
+            <!--começo de outra coluna-->
+
+            <tr>
+              <td id="metais-alcalinos">
+                <div>
+                    <span id="numeroatomico">19</span>
+                    <span id="icone">K</span>
+                    <span id="nome">potássio</span>
+                    <span id="massaatomica">39.09</span>
+                    
+                </div></td>
+                <td id="alcalinoterrosos">
+                <div>
+                    <span id="numeroatomico">20</span>
+                    <span id="icone">Ca</span>
+                    <span id="nome">cálcio</span>
+                    <span id="massaatomica">40</span>
+                    
+                </div></td>
+                 <td id="metais">
+                    
+                <div>
+                    <span id="numeroatomico">21</span>
+                    <span id="icone">Sc</span>
+                    <span id="nome">escândio</span>
+                    <span id="massaatomica">44.95</span>
+                    
+                </div></td>
+
+             <td colspan="" id="colspanado"></td><!--esse é o colspan-->
+             
+             
+                <td id="metais">
+                <div>
+                    <span id="numeroatomico">22</span>
+                    <span id="icone">Ti</span>
+                    <span id="nome">titânio</span>
+                    <span id="massaatomica">47.86</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+             <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>  
+            </tr>
+            
+
+            <!--começo de outra coluna-->
+
+            <tr>
+              <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                
+                <td>
+                    
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+
+             <td colspan="" id="colspanado"></td><!--esse é o colspan-->
+             
+             
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+             <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>  
+            </tr>
+            
+
+            <!--começo de outra coluna-->
+
+            <tr>
+              <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                
+                <td>
+                    
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+
+             <td colspan="" id="colspanado"></td><!--esse é o colspan-->
+             
+             
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+             <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>  
+            </tr>
+            
+
+            <!--começo de outra coluna-->
+
+            <tr>
+              <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                
+                <td>                   
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+
+             <td colspan="" id="colspanado"></td><!--esse é o colspan-->
+            
+             
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+             <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>  
+            </tr>
+            
+
+            <!--começo de outra coluna-->
+            <tr>
+                <td id="colspanado" colspan="18">
+                            <div>
+                                <span id="numeroatomico">10</span>
+                                <span id="icone">H</span>
+                                <span id="nome">hidrogênio</span>
+                                <span id="massaatomica">20</span>
+                                
+                            </div></td>
+            </tr>
+
+                <!--nova coluna-->
+
+
+            <tr>
+              
+             <td colspan="4" id="colspanado"></td><!--esse é o colspan-->
+             
+                
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+             <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>  
+            </tr>
+
+            <!--nova coluna-->
+
+
+            <tr>
+              
+             <td colspan="4" id="colspanado"></td><!--esse é o colspan-->
+             
+                
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+             <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td> 
+                <td>
+                <div>
+                    <span id="numeroatomico">10</span>
+                    <span id="icone">H</span>
+                    <span id="nome">hidrogênio</span>
+                    <span id="massaatomica">20</span>
+                    
+                </div></td>  
+            </tr>
+            
+        </table>
+    </body>
+</html>
